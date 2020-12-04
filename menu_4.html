@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="description de la page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="./Styles/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e4d38b2105.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      <h1 class="shrikhand">ohmyfood</h1>
+    </header>
+    <main>
+      <p>
+        <img
+          src="Pictures/Restaurants/Le_Délice_Des_Sens.jpg"
+          alt="Photo du restaurant le délice des sens"
+        />
+      </p>
+      <section class="menu">
+        <h2 class="shrikhand">
+          Le délice des sens <i class="far fa-heart"></i>
+        </h2>
+        <form class="menu__form" method="GET" action="menu_1.html">
+          <section class="menu__entrées">
+            <h3>ENTRÉES</h3>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Tartare de thon</h4>
+                <div class="legend__compo">
+                  <p>Assaisonné au yuzu</p>
+                  <p>25€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="thon" class="menu--input" />
+            </article>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Bouchée de homard croustillant</h4>
+                <div class="legend__compo">
+                  <p>Et sa farandole de petits légumes</p>
+                  <p>35€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="homard" class="menu--input" />
+            </article>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Velouté de cèpes</h4>
+                <div class="legend__compo">
+                  <p>Aux truffes</p>
+                  <p>20€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="cèpes" class="menu--input" />
+            </article>
+          </section>
+          <section class="menu__plats">
+            <h3>PLATS</h3>
+            <article class="plats">
+              <div class="legend">
+                <h4>Poulet rôti aux herbes de Provence</h4>
+                <div class="legend__compo">
+                  <p>Et sa crème de truffe</p>
+                  <p>40€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="poulet" class="menu--input" />
+            </article>
+            <article class="plats">
+              <div class="legend">
+                <h4>Langouste rôtie</h4>
+                <div class="legend__compo">
+                  <p>Et ses légumes de saison</p>
+                  <p>35€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="langouste" class="menu--input" />
+            </article>
+            <article class="plats">
+              <div class="legend">
+                <h4>Côte de boeuf Angus</h4>
+                <div class="legend__compo">
+                  <p>Et sa purée de panais</p>
+                  <p>44€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="angus" class="menu--input" />
+            </article>
+          </section>
+          <section class="menu__desserts">
+            <h3>DESSERTS</h3>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Farandole de desserts</h4>
+                <div class="legend__compo">
+                  <p>Du chef</p>
+                  <p>18€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="farandole" class="menu--input" />
+            </article>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Crème brulée</h4>
+                <div class="legend__compo">
+                  <p>Revisitée</p>
+                  <p>22€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="crème" class="menu--input" />
+            </article>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Tiramisu</h4>
+                <div class="legend__compo">
+                  <p>À la noisette</p>
+                  <p>23€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="tiramisu" class="menu--input" />
+            </article>
+          </section>
+          <input class="submit" type="submit" value="Commander" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <h3 class="shrikhand">ohmyfood</h3>
+      <nav class="footer__nav">
+        <ul class="footer__nav__liste">
+          <li>
+            <a href="#"
+              ><i class="fas fa-utensils"></i> Proposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-hands-helping"></i> Devenir partenaire</a
+            >
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

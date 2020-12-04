@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="description de la page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="./Styles/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e4d38b2105.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      <h1 class="shrikhand">ohmyfood</h1>
+    </header>
+    <main>
+      <p>
+        <img
+          src="Pictures/Restaurants/La_Note_Enchantée.jpg"
+          alt="Photo du restaurant la note enchantée"
+        />
+      </p>
+      <section class="menu">
+        <h2 class="shrikhand">
+          La note enchantée <i class="far fa-heart"></i>
+        </h2>
+        <form class="menu__form" method="GET" action="menu_1.html">
+          <section class="menu__entrées">
+            <h3>ENTRÉES</h3>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Ravioles de foie gras</h4>
+                <div class="legend__compo">
+                  <p>Accompagnés de leur crème à la truffe</p>
+                  <p>25€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="ravioles" class="menu--input" />
+            </article>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Caviar osciètre</h4>
+                <div class="legend__compo">
+                  <p>Sur blini à la farine de blé noir</p>
+                  <p>35€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="caviar" class="menu--input" />
+            </article>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Homard et espuma de potiron</h4>
+                <div class="legend__compo">
+                  <p>Mariné aux zestes d'orange</p>
+                  <p>20€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="homard" class="menu--input" />
+            </article>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Foie gras de canard cuit entier</h4>
+                <div class="legend__compo">
+                  <p>Confiture de figue et pain toasté</p>
+                  <p>35€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="foie" class="menu--input" />
+            </article>
+          </section>
+          <section class="menu__plats">
+            <h3>PLATS</h3>
+            <article class="plats">
+              <div class="legend">
+                <h4>Noix de coquilles Saint-Jacques</h4>
+                <div class="legend__compo">
+                  <p>Sur lit de purée de céleri-rave</p>
+                  <p>40€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="noix" class="menu--input" />
+            </article>
+            <article class="plats">
+              <div class="legend">
+                <h4>Langoustine poêlée</h4>
+                <div class="legend__compo">
+                  <p>Purée de patate douce</p>
+                  <p>35€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="langoustine" class="menu--input" />
+            </article>
+            <article class="plats">
+              <div class="legend">
+                <h4>Mijoté de queue de boeuf</h4>
+                <div class="legend__compo">
+                  <p>Et riz sauvage aux zestes de citron</p>
+                  <p>44€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="mijoté" class="menu--input" />
+            </article>
+          </section>
+          <section class="menu__desserts">
+            <h3>DESSERTS</h3>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Macaron noisette et chocolat</h4>
+                <div class="legend__compo">
+                  <p>Glace au caramel brun et sel de Guérande</p>
+                  <p>18€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="macaron" class="menu--input" />
+            </article>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Baba au rhum revisité</h4>
+                <div class="legend__compo">
+                  <p>Avec son coulis de citron</p>
+                  <p>22€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="baba" class="menu--input" />
+            </article>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Tarte au citron meringuée</h4>
+                <div class="legend__compo">
+                  <p>Déstructurée</p>
+                  <p>23€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="citron" class="menu--input" />
+            </article>
+          </section>
+          <input class="submit" type="submit" value="Commander" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <h3 class="shrikhand">ohmyfood</h3>
+      <nav class="footer__nav">
+        <ul class="footer__nav__liste">
+          <li>
+            <a href="#"
+              ><i class="fas fa-utensils"></i> Proposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-hands-helping"></i> Devenir partenaire</a
+            >
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

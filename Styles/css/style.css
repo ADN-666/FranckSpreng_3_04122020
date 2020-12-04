@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import url("https://kit.fontawesome.com/e4d38b2105.js");
+body {
+  font-family: "roboto";
+  width: 375px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.shrikhand {
+  font-family: "Shrikhand";
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.2em;
+}
+
+.search {
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.search__form {
+  width: 100%;
+  text-align: center;
+}
+
+.style_input {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  border-top: 2px inset #cfcfcf;
+  padding-left: 2em;
+}
+
+.style_input input {
+  height: auto;
+  background-color: #eaeaea;
+  border-style: none;
+  -webkit-appearance: none;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.style_input input:focus {
+  outline: none;
+}
+
+.style_input input::placeholder {
+  color: black;
+}
+
+.style_texte {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.style_texte h2 {
+  margin-top: 1.5em;
+}
+
+.style_texte p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+.submit {
+  width: 15em;
+  height: 3.5em;
+  border: 0;
+  border-radius: 25px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  outline: none;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.fonction {
+  margin-top: 2.5em;
+  padding-left: 20px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fonction h2 {
+  margin-bottom: 0.4em;
+}
+
+.fonction__liste {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fonction__liste p {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  height: 4em;
+  padding-top: 1.7em;
+  box-shadow: 1px 1px 10px 1px grey;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.fonction__liste p:hover {
+  background-color: #f5edff;
+}
+
+.fonction__liste p:hover > i {
+  color: #9356dc;
+}
+
+span {
+  background-color: #9356dc;
+  border-radius: 100%;
+  padding: 0.1em 0.4em;
+  color: white;
+  margin-left: -0.5em;
+}
+
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+  color: #7e7e7e;
+}
+
+.fa-mobile-alt {
+  margin: 0 2em;
+}
+
+.fa-list-ul {
+  margin: 0 1.8em;
+}
+
+.fa-store {
+  margin: 0 1.7em;
+}
+
+.resto {
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 2.5em;
+  background-color: #f6f6f6;
+  padding-left: 20px;
+  padding-top: 2em;
+}
+
+.resto__cartes {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+}
+
+.carte {
+  height: 253px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte__légende {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4.7em;
+}
+
+figure {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 178px;
+  border-radius: 20px 20px 0 0;
+}
+
+.palette {
+  background-image: url(/Pictures/Restaurants/La_Palette_Du_Gout1.jpg);
+  background-size: cover;
+}
+
+.note {
+  background-image: url(/Pictures/Restaurants/La_Note_Enchantée1.jpg);
+  background-size: cover;
+}
+
+.française {
+  background-image: url(/Pictures/Restaurants/A_La_Française1.jpg);
+  background-size: cover;
+}
+
+.délice {
+  background-image: url(/Pictures/Restaurants/Le_Délice_Des_Sens1.jpg);
+  background-size: cover;
+}
+
+.new {
+  width: 23%;
+  height: 2em;
+  text-align: center;
+  margin-top: 0.8em;
+  margin-right: 1em;
+  color: #008766;
+  background-color: #99e2d0;
+  border-radius: 2px;
+}
+
+.new p {
+  margin-top: 0.4em;
+}
+
+.carte__légende h3 {
+  margin: 0;
+  margin-left: -1em;
+}
+
+.carte__légende p {
+  margin: 0;
+  margin-top: 0.3em;
+  margin-left: -1.2em;
+}
+
+.fa-heart {
+  margin-left: 1.5em;
+  font-size: 1.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 25px;
+  height: 200px;
+  background-color: #353535;
+  color: white;
+}
+
+footer ul {
+  margin-bottom: 1.5em;
+}
+
+footer li {
+  margin-bottom: 0.5em;
+}
+
+footer h3 {
+  margin: 0;
+  margin-top: 1em;
+  font-weight: normal;
+}
+
+.footer__nav__liste a {
+  color: white;
+}
+
+.fa-utensils {
+  margin-right: 0.5em;
+}
+/*# sourceMappingURL=style.css.map */

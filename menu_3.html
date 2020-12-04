@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Page d'accueil du site Ohmyfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="./Styles/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e4d38b2105.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      <h1 class="shrikhand">ohmyfood</h1>
+    </header>
+    <main>
+      <p>
+        <img
+          src="Pictures/Restaurants/A_La_Française.jpg"
+          alt="Photo du restaurant à la française"
+        />
+      </p>
+      <section class="menu">
+        <h2 class="shrikhand">A la française <i class="far fa-heart"></i></h2>
+        <form class="menu__form" method="GET" action="menu_1.html">
+          <section class="menu__entrées">
+            <h3>ENTRÉES</h3>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Tartare de poulpe acidulé</h4>
+                <div class="legend__compo">
+                  <p>Aux zestes d'orange</p>
+                  <p>25€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="poulpe" class="menu--input" />
+            </article>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Velouté de légumes d'antan</h4>
+                <div class="legend__compo">
+                  <p>Carotte, panais, topinambour</p>
+                  <p>35€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="velouté" class="menu--input" />
+            </article>
+            <article class="entrées">
+              <div class="legend">
+                <h4>Soupe à l'oignon</h4>
+                <div class="legend__compo">
+                  <p>Revisitée</p>
+                  <p>20€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="soupe" class="menu--input" />
+            </article>
+          </section>
+          <section class="menu__plats">
+            <h3>PLATS</h3>
+            <article class="plats">
+              <div class="legend">
+                <h4>Coquilles Saint-Jacques</h4>
+                <div class="legend__compo">
+                  <p>Accompagnées d'une purée de panais</p>
+                  <p>40€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="coquilles" class="menu--input" />
+            </article>
+            <article class="plats">
+              <div class="legend">
+                <h4>Magret de canard</h4>
+                <div class="legend__compo">
+                  <p>Et parmentier de pommes de terre</p>
+                  <p>35€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="magret" class="menu--input" />
+            </article>
+            <article class="plats">
+              <div class="legend">
+                <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                <div class="legend__compo">
+                  <p>Sur son lit de gnocchis aux légumes</p>
+                  <p>44€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="pigeonneau" class="menu--input" />
+            </article>
+          </section>
+          <section class="menu__desserts">
+            <h3>DESSERTS</h3>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Pétales de violettes glacés</h4>
+                <div class="legend__compo">
+                  <p>Et purée de noisettes</p>
+                  <p>18€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="violettes" class="menu--input" />
+            </article>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Fondant au chocolat</h4>
+                <div class="legend__compo">
+                  <p>Revisité</p>
+                  <p>22€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="fondant" class="menu--input" />
+            </article>
+            <article class="desserts">
+              <div class="legend">
+                <h4>Millefeuille croustillant</h4>
+                <div class="legend__compo">
+                  <p>Myrtilles et pâte d’amande</p>
+                  <p>23€</p>
+                </div>
+              </div>
+              <input type="checkbox" name="millefeuille" class="menu--input" />
+            </article>
+          </section>
+          <input class="submit" type="submit" value="Commander" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <h3 class="shrikhand">ohmyfood</h3>
+      <nav class="footer__nav">
+        <ul class="footer__nav__liste">
+          <li>
+            <a href="#"
+              ><i class="fas fa-utensils"></i> Proposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-hands-helping"></i> Devenir partenaire</a
+            >
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
