@@ -13,122 +13,195 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header__menu">
       <a href="index.html"><i class="fas fa-arrow-left"></i></a>
       <h1 class="shrikhand">ohmyfood</h1>
     </header>
-    <main>
-      <p>
-        <img
-          src="Pictures/Restaurants/La_Palette_Du_Gout.jpg"
-          alt="Photo du restaurant la palette du goût"
-        />
-      </p>
+    <main class="main__menu">
+      <div class="bg__img__palette"></div>
       <section class="menu">
-        <h2 class="shrikhand">
+        <h2 class="shrikhand menu__shrikhand">
           La palette du goût <i class="far fa-heart"></i>
         </h2>
         <form class="menu__form" method="GET" action="menu_1.html">
           <section class="menu__entrées">
             <h3>ENTRÉES</h3>
-            <article class="entrées">
-              <div class="legend">
+            <article class="entrées slide__1 slide__ico">
+              <div class="détail">
                 <h4>Fricassée d'escargot</h4>
-                <div class="legend__compo">
-                  <p>Au piment d'espelette</p>
+                <div class="legend">
+                  <p class="nowrap">Au piment d'espelette</p>
                   <p>25€</p>
                 </div>
               </div>
-              <input type="checkbox" name="escargot" class="menu--input" />
+              <div class="slide__input">
+                <label for="escargot"
+                  ><i class="far fa-check-circle"></i
+                ></label>
+                <input
+                  type="checkbox"
+                  name="escargot"
+                  id="escargot"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="entrées">
-              <div class="legend">
+            <article class="entrées slide__2 slide__ico">
+              <div class="détail">
                 <h4>Foie gras de canard mi-cuit</h4>
-                <div class="legend__compo">
-                  <p>Et ses copeaux de truffe noire</p>
+                <div class="legend">
+                  <p class="nowrap">Et ses copeaux de truffe noire</p>
                   <p>35€</p>
                 </div>
               </div>
-              <input type="checkbox" name="canard" class="menu--input" />
+              <div class="slide__input">
+                <label for="canard"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="canard"
+                  id="canard"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="entrées">
-              <div class="legend">
+            <article class="entrées slide__3 slide__ico">
+              <div class="détail">
                 <h4>Oeuf au plat</h4>
-                <div class="legend__compo">
-                  <p>Assaisonné à la truffe sur lit de caviar</p>
+                <div class="legend">
+                  <p class="nowrap">Assaisonné à la truffe sur lit de caviar</p>
                   <p>20€</p>
                 </div>
               </div>
-              <input type="checkbox" name="oeuf" class="menu--input" />
+              <div class="slide__input">
+                <label for="oeuf"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="oeuf"
+                  id="oeuf"
+                  class="menu--input"
+                />
+              </div>
             </article>
           </section>
           <section class="menu__plats">
             <h3>PLATS</h3>
-            <article class="plats">
-              <div class="legend">
+            <article class="plats slide__1 slide__ico">
+              <div class="détail">
                 <h4>Filet de boeuf aux herbes</h4>
-                <div class="legend__compo">
-                  <p>Accompagné de sa ribambelle de légumes</p>
+                <div class="legend">
+                  <p class="nowrap">Accompagné de sa ribambelle de légumes</p>
                   <p>40€</p>
                 </div>
               </div>
-              <input type="checkbox" name="boeuf" class="menu--input" />
+              <div class="slide__input">
+                <label for="boeuf"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="boeuf"
+                  id="boeuf"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="plats">
-              <div class="legend">
+            <article class="plats slide__2 slide__ico">
+              <div class="détail">
                 <h4>Parmentier de queue de boeuf</h4>
-                <div class="legend__compo">
-                  <p>Á la truffe noire sur sa purée de panais</p>
+                <div class="legend">
+                  <p class="nowrap">Á la truffe noire sur sa purée de panais</p>
                   <p>35€</p>
                 </div>
               </div>
-              <input type="checkbox" name="parmentier" class="menu--input" />
+              <div class="slide__input">
+                <label for="parmentier"
+                  ><i class="far fa-check-circle"></i
+                ></label>
+                <input
+                  type="checkbox"
+                  name="parmentier"
+                  id="parmentier"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="plats">
-              <div class="legend">
+            <article class="plats slide__3 slide__ico">
+              <div class="détail">
                 <h4>Filet de Turbot</h4>
-                <div class="legend__compo">
-                  <p>Aux agrumes</p>
+                <div class="legend">
+                  <p class="nowrap">Aux agrumes</p>
                   <p>44€</p>
                 </div>
               </div>
-              <input type="checkbox" name="turbot" class="menu--input" />
+              <div class="slide__input">
+                <label for="turbot"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="turbot"
+                  id="turbot"
+                  class="menu--input"
+                />
+              </div>
             </article>
           </section>
           <section class="menu__desserts">
             <h3>DESSERTS</h3>
-            <article class="desserts">
-              <div class="legend">
+            <article class="desserts slide__1 slide__ico">
+              <div class="détail">
                 <h4>Paris-Brest</h4>
-                <div class="legend__compo">
-                  <p>Revisité</p>
+                <div class="legend">
+                  <p class="nowrap">Revisité</p>
                   <p>18€</p>
                 </div>
               </div>
-              <input type="checkbox" name="paris" class="menu--input" />
+              <div class="slide__input">
+                <label for="paris"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="paris"
+                  id="paris"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="desserts">
-              <div class="legend">
+            <article class="desserts slide__2 slide__ico">
+              <div class="détail">
                 <h4>Macaron au chocolat d'exception</h4>
-                <div class="legend__compo">
-                  <p>Et glace à la vanille de Madagascar</p>
+                <div class="legend">
+                  <p class="nowrap">Et glace à la vanille de Madagascar</p>
                   <p>22€</p>
                 </div>
               </div>
-              <input type="checkbox" name="macaron" class="menu--input" />
+              <div class="slide__input">
+                <label for="macaron"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="macaron"
+                  id="macaron"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="desserts">
-              <div class="legend">
+            <article class="desserts slide__3 slide__ico">
+              <div class="détail">
                 <h4>Mousse au chocolat</h4>
-                <div class="legend__compo">
-                  <p>Au piment d'espelette et à la truffe noire</p>
+                <div class="legend">
+                  <p class="nowrap">
+                    Au piment d'espelette et à la truffe noire
+                  </p>
                   <p>23€</p>
                 </div>
               </div>
-              <input type="checkbox" name="mousse" class="menu--input" />
+              <div class="slide__input">
+                <label for="mousse"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="mousse"
+                  id="mousse"
+                  class="menu--input"
+                />
+              </div>
             </article>
           </section>
-          <input class="submit" type="submit" value="Commander" />
+          <input class="submit submit__menu" type="submit" value="Commander" />
         </form>
       </section>
     </main>

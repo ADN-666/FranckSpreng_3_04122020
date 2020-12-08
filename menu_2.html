@@ -13,132 +13,211 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header__menu">
       <a href="index.html"><i class="fas fa-arrow-left"></i></a>
       <h1 class="shrikhand">ohmyfood</h1>
     </header>
-    <main>
-      <p>
-        <img
-          src="Pictures/Restaurants/La_Note_Enchantée.jpg"
-          alt="Photo du restaurant la note enchantée"
-        />
-      </p>
+    <main class="main__menu">
+      <div class="bg__img__note"></div>
       <section class="menu">
-        <h2 class="shrikhand">
+        <h2 class="shrikhand menu__shrikhand">
           La note enchantée <i class="far fa-heart"></i>
         </h2>
         <form class="menu__form" method="GET" action="menu_1.html">
           <section class="menu__entrées">
             <h3>ENTRÉES</h3>
-            <article class="entrées">
-              <div class="legend">
+            <article class="entrées slide__1 slide__ico">
+              <div class="détail">
                 <h4>Ravioles de foie gras</h4>
-                <div class="legend__compo">
-                  <p>Accompagnés de leur crème à la truffe</p>
+                <div class="legend">
+                  <p class="nowrap">Accompagnés de leur crème à la truffe</p>
                   <p>25€</p>
                 </div>
               </div>
-              <input type="checkbox" name="ravioles" class="menu--input" />
+              <div class="slide__input">
+                <label for="ravioles"
+                  ><i class="far fa-check-circle"></i
+                ></label>
+                <input
+                  type="checkbox"
+                  name="ravioles"
+                  id="ravioles"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="entrées">
-              <div class="legend">
+            <article class="entrées slide__2 slide__ico">
+              <div class="détail">
                 <h4>Caviar osciètre</h4>
-                <div class="legend__compo">
-                  <p>Sur blini à la farine de blé noir</p>
+                <div class="legend">
+                  <p class="nowrap">Sur blini à la farine de blé noir</p>
                   <p>35€</p>
                 </div>
               </div>
-              <input type="checkbox" name="caviar" class="menu--input" />
+              <div class="slide__input">
+                <label for="caviar"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="caviar"
+                  id="caviar"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="entrées">
-              <div class="legend">
+            <article class="entrées slide__3 slide__ico">
+              <div class="détail">
                 <h4>Homard et espuma de potiron</h4>
-                <div class="legend__compo">
-                  <p>Mariné aux zestes d'orange</p>
+                <div class="legend">
+                  <p class="nowrap">Mariné aux zestes d'orange</p>
                   <p>20€</p>
                 </div>
               </div>
-              <input type="checkbox" name="homard" class="menu--input" />
+              <div class="slide__input">
+                <label for="homard"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="homard"
+                  id="homard"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="entrées">
-              <div class="legend">
+            <article class="entrées slide__4 slide__ico">
+              <div class="détail">
                 <h4>Foie gras de canard cuit entier</h4>
-                <div class="legend__compo">
-                  <p>Confiture de figue et pain toasté</p>
+                <div class="legend">
+                  <p class="nowrap">Confiture de figue et pain toasté</p>
                   <p>35€</p>
                 </div>
               </div>
-              <input type="checkbox" name="foie" class="menu--input" />
+              <div class="slide__input">
+                <label for="foie"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="foie"
+                  id="foie"
+                  class="menu--input"
+                />
+              </div>
             </article>
           </section>
           <section class="menu__plats">
             <h3>PLATS</h3>
-            <article class="plats">
-              <div class="legend">
+            <article class="plats slide__1 slide__ico">
+              <div class="détail">
                 <h4>Noix de coquilles Saint-Jacques</h4>
-                <div class="legend__compo">
-                  <p>Sur lit de purée de céleri-rave</p>
+                <div class="legend">
+                  <p class="nowrap">Sur lit de purée de céleri-rave</p>
                   <p>40€</p>
                 </div>
               </div>
-              <input type="checkbox" name="noix" class="menu--input" />
+              <div class="slide__input">
+                <label for="noix"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="noix"
+                  id="noix"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="plats">
-              <div class="legend">
+            <article class="plats slide__2 slide__ico">
+              <div class="détail">
                 <h4>Langoustine poêlée</h4>
-                <div class="legend__compo">
-                  <p>Purée de patate douce</p>
+                <div class="legend">
+                  <p class="nowrap">Purée de patate douce</p>
                   <p>35€</p>
                 </div>
               </div>
-              <input type="checkbox" name="langoustine" class="menu--input" />
+              <div class="slide__input">
+                <label for="langoustine"
+                  ><i class="far fa-check-circle"></i
+                ></label>
+                <input
+                  type="checkbox"
+                  name="langoustine"
+                  id="langoustine"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="plats">
-              <div class="legend">
+            <article class="plats slide__3 slide__ico">
+              <div class="détail">
                 <h4>Mijoté de queue de boeuf</h4>
-                <div class="legend__compo">
-                  <p>Et riz sauvage aux zestes de citron</p>
+                <div class="legend">
+                  <p class="nowrap">Et riz sauvage aux zestes de citron</p>
                   <p>44€</p>
                 </div>
               </div>
-              <input type="checkbox" name="mijoté" class="menu--input" />
+              <div class="slide__input">
+                <label for="mijoté"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="mijoté"
+                  id="mijoté"
+                  class="menu--input"
+                />
+              </div>
             </article>
           </section>
           <section class="menu__desserts">
             <h3>DESSERTS</h3>
-            <article class="desserts">
-              <div class="legend">
+            <article class="desserts slide__1 slide__ico">
+              <div class="détail">
                 <h4>Macaron noisette et chocolat</h4>
-                <div class="legend__compo">
-                  <p>Glace au caramel brun et sel de Guérande</p>
+                <div class="legend">
+                  <p class="nowrap">Glace au caramel brun et sel de Guérande</p>
                   <p>18€</p>
                 </div>
               </div>
-              <input type="checkbox" name="macaron" class="menu--input" />
+              <div class="slide__input">
+                <label for="macaron"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="macaron"
+                  id="macaron"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="desserts">
-              <div class="legend">
-                <h4>Baba au rhum revisité</h4>
-                <div class="legend__compo">
-                  <p>Avec son coulis de citron</p>
+            <article class="desserts slide__2 slide__ico">
+              <div class="détail">
+                <div class="legend">
+                  <h4>Baba au rhum revisité</h4>
+                  <p class="nowrap">Avec son coulis de citron</p>
                   <p>22€</p>
                 </div>
               </div>
-              <input type="checkbox" name="baba" class="menu--input" />
+              <div class="slide__input">
+                <label for="baba"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="baba"
+                  id="baba"
+                  class="menu--input"
+                />
+              </div>
             </article>
-            <article class="desserts">
-              <div class="legend">
-                <h4>Tarte au citron meringuée</h4>
-                <div class="legend__compo">
-                  <p>Déstructurée</p>
+            <article class="desserts slide__3 slide__ico">
+              <div class="détail">
+                <div class="legend">
+                  <h4>Tarte au citron meringuée</h4>
+                  <p class="nowrap">Déstructurée</p>
                   <p>23€</p>
                 </div>
               </div>
-              <input type="checkbox" name="citron" class="menu--input" />
+              <div class="slide__input">
+                <label for="citron"><i class="far fa-check-circle"></i></label>
+                <input
+                  type="checkbox"
+                  name="citron"
+                  id="citron"
+                  class="menu--input"
+                />
+              </div>
             </article>
           </section>
-          <input class="submit" type="submit" value="Commander" />
+          <input class="submit submit__menu" type="submit" value="Commander" />
         </form>
       </section>
     </main>
