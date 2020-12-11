@@ -24,23 +24,16 @@
   }
 }
 
-@keyframes slide__input {
-  from {
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    width: 25%;
-    opacity: 1;
-  }
-}
-
 body {
   font-family: "roboto";
   width: auto;
   min-width: 375px;
   max-width: 1500px;
   margin: auto;
+}
+
+.loader {
+  animation: display 3s;
 }
 
 a {
@@ -139,6 +132,10 @@ header h1 {
   cursor: pointer;
 }
 
+.submit:hover {
+  box-shadow: 3px 3px 5px grey, -3px -3px 5px grey;
+}
+
 .fonction {
   margin-top: 2.5em;
   padding-left: 20px;
@@ -178,13 +175,32 @@ header h1 {
   color: #9356dc;
 }
 
-.fa-heart:hover::before {
+.fa-heart::after {
   content: "\f004";
-  font-weight: bold;
-  color: #bb63db;
+  clip-path: circle(0%);
+  transition: clip-path 1.5s;
+  position: relative;
+  left: -24px;
+  font-size: 1em;
 }
 
-span {
+.fa-heart:hover::before {
+  content: "\f004";
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-heart:hover::after {
+  content: "\f004";
+  font-weight: bold;
+  background: linear-gradient(#9356dc, #ff79da);
+  background: -webkit-linear-gradient(to top, #9356dc, #ff79da);
+  clip-path: circle(100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.numb {
   background-color: #9356dc;
   border-radius: 100%;
   padding: 0.1em 0.4em;
@@ -343,6 +359,10 @@ footer h3 {
   height: 1580px;
 }
 
+.main__menu__note {
+  height: 1670px;
+}
+
 .menu__fond {
   height: 300px;
 }
@@ -360,6 +380,10 @@ footer h3 {
   font-size: 1em;
 }
 
+.title__line {
+  border-bottom: 3px solid #99e2d0;
+}
+
 .menu {
   width: 100%;
   position: relative;
@@ -370,6 +394,10 @@ footer h3 {
   justify-content: flex-start;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0 0;
+}
+
+.menu__note {
+  height: 1400px;
 }
 
 .menu__form {
@@ -386,6 +414,10 @@ footer h3 {
   flex-direction: column;
   justify-content: space-between;
   height: 350px;
+}
+
+.menu__entrées__note {
+  height: 446px;
 }
 
 .entrées,
@@ -463,14 +495,6 @@ footer h3 {
   margin-top: 2.5em;
 }
 
-.slide__ico:hover > .slide__input {
-  width: 25%;
-}
-
-.slide__ico:hover > .slide__input i {
-  animation: slide__ico 1.5s;
-}
-
 .slide__input {
   width: 0;
   height: 100%;
@@ -482,6 +506,7 @@ footer h3 {
   margin-left: 0.5em;
   overflow: hidden;
   transition: all 1s;
+  -webkit-transition: all 1s;
 }
 
 .slide__input i {
@@ -489,6 +514,17 @@ footer h3 {
   border-radius: 20px;
   font-size: 1.7em;
   background-color: white;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.slide__ico:active > .slide__input {
+  width: 25%;
+}
+
+.slide__ico:active > .slide__input i {
+  animation: slide__ico 1.5s;
 }
 
 .menu--input {
@@ -591,6 +627,9 @@ footer h3 {
   .main__menu {
     height: 1470px;
   }
+  .main__menu__note {
+    height: 1560px;
+  }
   .menu__fond__img {
     max-height: 280px;
   }
@@ -599,6 +638,9 @@ footer h3 {
     align-items: center;
     border-radius: 0;
   }
+  .menu__note {
+    height: 1290px;
+  }
   .menu__form {
     width: 60%;
   }
@@ -606,6 +648,9 @@ footer h3 {
   .menu__plats,
   .menu__desserts {
     height: 300px;
+  }
+  .menu__entrées__note {
+    height: 380px;
   }
 }
 
@@ -616,6 +661,9 @@ footer h3 {
   .main__menu {
     height: 1008px;
   }
+  .main__menu__note {
+    height: 1010px;
+  }
   .menu {
     height: 610px;
     top: 100px;
@@ -625,6 +673,7 @@ footer h3 {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
   }
   .menu__entrées,
   .menu__plats,
@@ -636,6 +685,70 @@ footer h3 {
     left: 40%;
     top: 78%;
     width: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .slide__ico:hover > .slide__input {
+    width: 25%;
+  }
+  .slide__ico:hover > .slide__input i {
+    animation: slide__ico 1.5s;
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 9999;
+  visibility: hidden;
+}
+
+.loader__bar {
+  border-radius: 150px;
+  width: 200px;
+  height: 200px;
+  border-top: 10px solid #9356dc;
+  border-right: 10px solid #99e2d0;
+  border-bottom: 10px solid #ff79da;
+  border-left: 10px solid #99e2d0;
+  animation: spin 2s infinite linear;
+}
+
+.loader__logo {
+  position: fixed;
+  font-family: "shrikhand";
+  font-size: 3em;
+  color: whitesmoke;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes display {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */
