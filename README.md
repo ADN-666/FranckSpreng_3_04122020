@@ -1,4 +1,4 @@
-<p align="center"><img src="./Docs/ohmyfood.png" alt="ohmyfood"></p> 
+<p align="center"><img src="./Docs/ohmyfood@2x.svg" alt="ohmyfood"></p> 
 
 <h1 align="center">projet 3</h1>
  
@@ -16,7 +16,7 @@ Mon travail consiste à intégrer les maquettes graphiques en utilisant uniqueme
 Pour mener à bien ce projet, je suis parti des différentes maquettes :
 1. Une page d'accueil
 
-<p align="center"><img src="./docs/Accueil.png" alt="Page accueil"></p>
+<p align="center"><img src="./Docs/Accueil.png" alt="Page accueil"></p>
 
 2. Les 4 pages menus (Sur le même modèle)
 
