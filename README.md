@@ -1,58 +1,90 @@
-<p align="center"><img src="./Docs/ohmyfood@2x.svg" alt="ohmyfood"></p> 
+<p align="center"><img src="./Docs/ohmyfood@2x.svg" alt="Logo ohmyfood"></p> 
 
-<h1 align="center">projet 3</h1>
+<h1 align="center">Projet n° 3</h1>
  
 
-## Introduction 
+**Introduction** 
 
-"Ohmyfood !" est le troisième projet que je réalise dans le cadre de ma formation avec  **OpenClassrooms**.
+<br>
 
-Dans ce scénario, je suis développeur  web junior dans une entreprise qui propose un outil de réservation de menus.
+"Ohmyfood !" site de commande de repas dans différents restaurants est le troisième projet que je dois réaliser dans 
+le cadre de ma formation "développeur web" avec le site de formation **OpenClassrooms**.
 
-Mon travail consiste à intégrer les maquettes graphiques en utilisant uniquement *HTML* et *CSS*, avec la possibilité d'utiliser *Sass*. Mais avant toute chose, voyons en quoi cela consiste.
+Pour ce projet, je suis développeur web junior dans une société qui propose un outil de réservation de menus.
+
+Mon rôle consiste à intégrer les maquettes graphiques en utilisant uniquement *HTML* et *CSS*, l'utilisation de *Sass* étant un plus. 
+
+<br>
 
 ***************
-## Présentation - Les maquettes
-Pour mener à bien ce projet, je suis parti des différentes maquettes :
+
+<br>
+
+**Les maquettes**
+
+<br>
+
+Pour ce projet j'ai à ma disposition 5 maquettes mobiles :
+
+<br>
+
 1. Une page d'accueil
+
+<br>
 
 <p align="center"><img src="./Docs/Accueil.png" alt="Page accueil"></p>
 
-2. Les 4 pages menus (Sur le même modèle)
+<br>
 
-<p align="center"><img src="./Docs/Menu-La palette du goût.png" alt="Exemple de page menu"></p>
+2. 4 pages menus (Sur le même modèle)
 
-3. Les animations
+<br>
 
-<p align="center"><img src="./Docs/Apparition_progressive.mp4" alt="Arrivée progressive"></p>
-<p align="center"><img src="./Docs/Sélection_plat.mp4" alt="Validation du plat"></p>
+<p align="center"><img src="./Docs/menu_palette.png" alt="Exemple de page menu"></p>
 
-Il est demandé d'intégrer une mise en page responsive pour les tablettes et les ordinateurs, plus libre.
+<br>
+
+3. Les différentes animations demandées
+
+<br>
+
+<p align="center"><img src="./Docs/anim_menu.gif" alt="Slide du menu"></p>
+<p align="center"><img src="./Docs/anim_select.gif" alt="Slide sélection du plat"></p>
+
+<br>
+
+Il me faut aussi intégrer une mise en page responsive pour les tablettes et les ordinateurs mais de façon plus libre.
+
+<br>
 
 **************************
 
-## Détails techniques - Les contraintes
- Voici une liste des points techniques abordés dans le briefing et qui doivent figurés dans notre projet
- * Le code doit être versionné. J'ai donc utilisé GitHub
+<br>
+
+**Les contraintes techniques sont :**
+
+<br>
+
+ 
+ *  Versionning du code
  * La charte graphique se compose des trois couleurs suivantes :
+ 
     * *Primaire* = #9356DC
     * *Secondaire* = #FF79DA
     * *Tertiaire* = #99E2D0
+    
 * Les polices du site sont **Roboto** pour le corps et **Shrikhand** Pour les titres.
-* Les icônes proviennent de la bibliotèque **Font Awesome**
-* Chaque carte de restaurant doit rediriger au clic sur la page HTML qui lui est attribué.
-* Un loading spinner qui dure entre 1 et 3 secondes doit être présent
+* Les icônes proviennent de la bibliotèque **Font Awesome**.
+* Les cartes de restaurant doivent renvoyées sur leurs pages respectives.
+* Un loading spinner qui dure entre 1 et 3 secondes doit apparaitre sur la page d'accueil au chargement.
 * Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
 * À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un bouton "J’aime" en forme de coeur est présent sur la maquette. Au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut être apparaître au survol au lieu du clic.
 * Les animations demandées doivent être fonctionnelles sur les pages de menu.
 * Le code ne doit présenter aucune erreur au validateur W3C
-Il est possible d'utiliser Sass pour structurer le CSS.
+
+<br>
 
 ************************
 
-## Évaluation - Les critères
-Les trois points principaux sur lesquels va s'axer l'évalutation de ma soutenance sont :
-* Mettre en œuvre des effets CSS graphiques avancés
-* Assurer la cohérence graphique d'un site web
-* Mettre en place une structure de navigation pour un site web
+
 
