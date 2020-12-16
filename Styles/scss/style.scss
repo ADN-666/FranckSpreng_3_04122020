@@ -26,6 +26,7 @@ body {
   z-index: 9999;
   visibility: hidden;
   animation: display 3s;
+
   &__bar {
     border-radius: 150px;
     width: 200px;
@@ -34,10 +35,10 @@ body {
     border-right: 10px solid $tertiaire;
     border-bottom: 10px solid $secondaire;
     border-left: 10px solid $tertiaire;
-    -webkit-animation: spin 2s infinite linear;
-    -moz-animation: spin 2s infinite linear;
-    -ms-animation: spin 2s infinite linear;
-    animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s 2 linear;
+    -moz-animation: spin 2s 2 linear;
+    -ms-animation: spin 2s 2 linear;
+    animation: spin 2s 2 linear;
   }
   &__logo {
     position: fixed;
@@ -110,13 +111,28 @@ header {
   outline: none;
   box-shadow: 2px 2px 5px grey;
   z-index: 1;
+  position: relative;
   cursor: pointer;
   &:hover {
     box-shadow: 2px 2px 10px 5px grey;
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
     background: linear-gradient(
       lighten($secondaire, 5%),
       lighten($primaire, 5%)
     );
+    opacity: 0;
+    z-index: -1;
   }
 }
 .fonction {
@@ -337,10 +353,13 @@ footer {
 .header__menu {
   display: flex;
   height: 63px;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top: 1em;
-  margin-right: 3em;
+  a {
+    position: relative;
+    left: -70px;
+  }
 }
 .fa-arrow-left {
   font-size: 1.5em;
@@ -396,14 +415,15 @@ footer {
 .menu {
   width: 100%;
   position: relative;
-  top: -30px;
-  height: 1310px;
+  top: -80px;
+  height: 1360px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: $fond;
   border-radius: 35px 35px 0 0;
   @include tablette {
+    top: -30px;
     height: 1200px;
     align-items: center;
     border-radius: 0;
@@ -421,9 +441,37 @@ footer {
     height: 446px;
   }
   &__note {
+    top: -30px;
     height: 1400px;
     @include tablette {
       height: 1290px;
+    }
+    @include desk_1200 {
+      height: 610px;
+      top: 100px;
+    }
+  }
+  &__palette {
+    top: -80px;
+    height: 1360px;
+    @include tablette {
+      height: 1200px;
+      top: -30px;
+    }
+    @include desk_1200 {
+      height: 610px;
+      top: 100px;
+    }
+  }
+  &__delices {
+    top: -30px;
+    height: 1310px;
+    @include tablette {
+      height: 1200px;
+    }
+    @include desk_1200 {
+      top: 100px;
+      height: 610px;
     }
   }
   &__form {
@@ -544,9 +592,7 @@ footer {
   animation: slide__ico 1.5s;
 }
 .menu--input {
-  width: 0;
-  height: 0;
-  visibility: hidden;
+  display: none;
 }
 
 // Responsive slide desktop
