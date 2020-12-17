@@ -4,7 +4,7 @@
 
 // CSS Page d'Accueil
 body {
-  @include desk_1440 {
+  @include desk_1500 {
     max-width: 1500px;
     margin: 30px auto;
     box-shadow: -5px -5px 5px #f2f2f2, 5px 5px 5px 5px black;
@@ -114,9 +114,9 @@ header {
   position: relative;
   cursor: pointer;
   &:hover {
-    box-shadow: 2px 2px 10px 5px grey;
     &::after {
       opacity: 1;
+      box-shadow: 2px 2px 10px 5px grey;
     }
   }
   &::after {
@@ -133,6 +133,7 @@ header {
     );
     opacity: 0;
     z-index: -1;
+    transition: opacity 1s;
   }
 }
 .fonction {
@@ -161,6 +162,7 @@ header {
       flex-direction: row;
     }
     p {
+      position: relative;
       background-color: $fond;
       border-radius: 20px;
       height: 4em;
@@ -168,6 +170,7 @@ header {
       box-shadow: 1px 1px 10px 1px grey;
       font-weight: bold;
       margin-bottom: 1em;
+      z-index: 1;
       @include tablette {
         width: 70%;
       }
@@ -177,11 +180,25 @@ header {
         margin-left: 2.5em;
       }
       &:hover {
-        background-color: lighten($primaire, 35%);
-
+        &::after {
+          opacity: 1;
+        }
         & > i {
           color: $primaire;
         }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        background-color: lighten($primaire, 35%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 1s;
       }
     }
   }
@@ -204,7 +221,7 @@ header {
   background: linear-gradient($primaire, $secondaire);
   clip-path: circle(100%);
   background-clip: content-box;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
 }
 .numb {
@@ -325,7 +342,7 @@ footer {
   height: 200px;
   background-color: #353535;
   color: white;
-  @include desk_1440 {
+  @include desk_1500 {
     border-radius: 0 0 20px 20px;
   }
   & ul {
@@ -373,7 +390,7 @@ footer {
     height: 1008px;
   }
   &__note {
-    height: 1670px;
+    height: 1650px;
     @include tablette {
       height: 1560px;
     }
@@ -383,30 +400,40 @@ footer {
   }
 }
 .menu__fond {
+  width: 100%;
   height: 300px;
+  display: flex;
+  justify-content: center;
+
+  @include desk_1200 {
+    height: 400px;
+  }
   &__img {
     border-radius: 0;
     @include tablette {
-      max-height: 280px;
-    }
-    @include desk_1200 {
-      max-height: 400px;
+      width: 70%;
+      height: 95%;
+      box-shadow: 3px 3px 20px 3px black;
+      border-radius: 25px;
     }
   }
 }
-.img__francaise {
+.img__française {
+  object-position: bottom;
   @include tablette {
-    object-position: 50% 60%;
+    object-position: 50% 65%;
   }
 }
 .img__delice {
+  object-position: bottom;
   @include tablette {
     object-position: 50% 80%;
   }
 }
 .img__note {
+  object-position: 50% 65%;
   @include tablette {
-    object-position: 50% 59%;
+    object-position: 50% 60%;
   }
 }
 .title__line {
@@ -423,15 +450,14 @@ footer {
   background-color: $fond;
   border-radius: 35px 35px 0 0;
   @include tablette {
-    top: -30px;
-    height: 1200px;
+    top: 0px;
+    height: 1170px;
     align-items: center;
     border-radius: 0;
   }
   @include desk_1200 {
     height: 610px;
-    top: 100px;
-    border-radius: 0;
+    top: 0px;
   }
   &__shrikhand {
     margin-top: 1.5em;
@@ -441,36 +467,12 @@ footer {
     height: 446px;
   }
   &__note {
-    top: -30px;
-    height: 1400px;
+    height: 1430px;
     @include tablette {
-      height: 1290px;
+      top: 0px;
+      height: 1260px;
     }
     @include desk_1200 {
-      height: 610px;
-      top: 100px;
-    }
-  }
-  &__palette {
-    top: -80px;
-    height: 1360px;
-    @include tablette {
-      height: 1200px;
-      top: -30px;
-    }
-    @include desk_1200 {
-      height: 610px;
-      top: 100px;
-    }
-  }
-  &__delices {
-    top: -30px;
-    height: 1310px;
-    @include tablette {
-      height: 1200px;
-    }
-    @include desk_1200 {
-      top: 100px;
       height: 610px;
     }
   }

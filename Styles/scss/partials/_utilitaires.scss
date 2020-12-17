@@ -81,7 +81,7 @@ $breakpoints: (
   desk_1024: 1024px,
   desk_1025: 1025px,
   desk_1200: 1200px,
-  desk_1440: 1440px,
+  desk_1500: 1500px,
 );
 
 // Mixin Responsive
@@ -101,8 +101,8 @@ $breakpoints: (
     @content;
   }
 }
-@mixin desk_1440 {
-  @media screen and (min-width: map-get($breakpoints, desk_1440)) {
+@mixin desk_1500 {
+  @media screen and (min-width: map-get($breakpoints, desk_1500)) {
     @content;
   }
 }
